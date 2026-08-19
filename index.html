@@ -3,9 +3,6 @@
   For WordPress: paste this whole block into a Custom HTML block (or an HTML widget) on its own page.
   It is fully self-contained (styles + markup + script) and scoped under .hsm-trial-demo so it will
   not affect the rest of the theme.
-
-  ACTION NEEDED: search for REPLACE-WITH-SIGNUP-URL (two places) and swap in the real trial sign-up
-  page URL before publishing. Everything else is ready to go live as-is.
 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,10 +32,10 @@
 .hsm-trial-demo .hsm-container { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
 @media (max-width: 640px) { .hsm-trial-demo .hsm-container { padding: 0 20px; } }
 
-.hsm-trial-demo .hsm-hero { padding: 96px 0 64px; animation: hsmFadeUp .6s var(--ease-standard) backwards; }
-.hsm-trial-demo .hsm-hero-title { font: 800 44px/1.06 var(--font-marketing); letter-spacing: -.02em; color: var(--ink-900); max-width: 15ch; }
-.hsm-trial-demo .hsm-hero-sub { font: 500 18px/1.55 var(--font-marketing); color: var(--gray-600); margin-top: 20px; max-width: 54ch; }
-.hsm-trial-demo .hsm-hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+.hsm-trial-demo .hsm-hero { padding: 96px 0 64px; text-align: center; animation: hsmFadeUp .6s var(--ease-standard) backwards; }
+.hsm-trial-demo .hsm-hero-title { font: 800 44px/1.06 var(--font-marketing); letter-spacing: -.02em; color: var(--ink-900); max-width: 15ch; margin: 0 auto; }
+.hsm-trial-demo .hsm-hero-sub { font: 500 18px/1.55 var(--font-marketing); color: var(--gray-600); margin: 20px auto 0; max-width: 54ch; }
+.hsm-trial-demo .hsm-hero-ctas { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 32px; }
 @media (max-width: 640px) { .hsm-trial-demo .hsm-hero { padding: 56px 0 40px; } .hsm-trial-demo .hsm-hero-title { font-size: 32px; max-width: 12ch; } }
 
 .hsm-trial-demo .hsm-btn {
@@ -55,7 +52,7 @@
 .hsm-trial-demo .hsm-btn-ghost svg { transition: transform .2s var(--ease-standard); }
 .hsm-trial-demo .hsm-btn-ghost:hover svg { transform: translateY(2px); }
 
-.hsm-trial-demo .hsm-journey { display: flex; gap: 0; margin-top: 60px; max-width: 800px; }
+.hsm-trial-demo .hsm-journey { display: flex; gap: 0; margin: 60px auto 0; max-width: 800px; }
 .hsm-trial-demo .hsm-journey-step { flex: 1; position: relative; padding-top: 28px; }
 .hsm-trial-demo .hsm-journey-step::before { content: ""; position: absolute; top: 9px; left: 0; width: 100%; height: 2px; background: var(--hairline); }
 .hsm-trial-demo .hsm-journey-step:first-child::before { left: 50%; width: 50%; }
@@ -74,7 +71,7 @@
 
 /* ============ DEMO FRAME CHROME ============ */
 .hsm-trial-demo .hsm-demo-wrap { padding: 0 0 100px; }
-.hsm-trial-demo .hsm-demo-intro { font: 500 15px/1.6 var(--font-marketing); color: var(--gray-600); max-width: 62ch; margin-bottom: 20px; }
+.hsm-trial-demo .hsm-demo-intro { font: 500 15px/1.6 var(--font-marketing); color: var(--gray-600); max-width: 62ch; margin: 0 auto 20px; text-align: center; }
 .hsm-trial-demo .hsm-frame {
     position: relative; border-radius: 20px; overflow: hidden; background: var(--gray-200);
     box-shadow: 0 1px 3px rgba(13,31,45,.06), 0 24px 48px rgba(13,31,45,.16);
@@ -316,7 +313,7 @@
     <h1 class="hsm-hero-title">Sign up, and you&rsquo;re already using the real platform.</h1>
     <p class="hsm-hero-sub">No sales call. No card details. No waiting for someone to set you up. Create an account below and you get full access to The HS Manager on web and mobile &mdash; the same platform every customer uses, free for 30 days.</p>
     <div class="hsm-hero-ctas">
-      <a class="hsm-btn hsm-btn-primary" href="#REPLACE-WITH-SIGNUP-URL">Start your free trial
+      <a class="hsm-btn hsm-btn-primary" href="https://app.thehsmanager.co.uk/Signup">Start your free trial
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
       <a class="hsm-btn hsm-btn-ghost" href="#hsm-demo-frame">Try it first, below
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"></path></svg></a>
@@ -540,7 +537,7 @@
   <div class="hsm-closing hsm-container">
     <h2 class="hsm-closing-title">Ready to see it with your own data?</h2>
     <p class="hsm-closing-sub">Start your free trial and you&rsquo;ll have full access in under a minute &mdash; the same platform you just walked through, on web and mobile.</p>
-    <a class="hsm-btn hsm-btn-primary" href="#REPLACE-WITH-SIGNUP-URL">Start your free trial
+    <a class="hsm-btn hsm-btn-primary" href="https://app.thehsmanager.co.uk/Signup">Start your free trial
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
     <p class="hsm-trust-line">No card required &middot; Free for 30 days &middot; 12 reports included</p>
   </div>
