@@ -6,7 +6,7 @@
 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 .hsm-trial-demo {
     --green-700: #0A8A14; --green-600: #0E9A18; --green-500: #12B71D;
@@ -17,9 +17,9 @@
     --gray-300: #CBD5E1; --gray-200: #E2E8F0; --gray-100: #F1F5F9;
     --gray-50: #F8FAFC; --white: #FFFFFF;
     --font-main: 'Asap', sans-serif;
-    --font-marketing: 'Plus Jakarta Sans', sans-serif;
-    --ink-900: #0D1F2D; --ink-700: #16303F; --ink-400: #5B7B92;
-    --page-bg: #F5F7F9; --hairline: #E1E6EB;
+    --font-marketing: 'Manrope', sans-serif;
+    --ink-900: #131022; --ink-body: #0D1E2D; --ink-700: #16303F; --ink-400: #5B7B92;
+    --page-bg: #FFFFFF; --hairline: #E1E6EB;
     --ease-standard: cubic-bezier(.2,.8,.2,1);
     display: block; background: var(--page-bg); font-family: var(--font-marketing);
 }
@@ -33,14 +33,15 @@
 @media (max-width: 640px) { .hsm-trial-demo .hsm-container { padding: 0 20px; } }
 
 .hsm-trial-demo .hsm-hero { padding: 96px 0 64px; text-align: center; animation: hsmFadeUp .6s var(--ease-standard) backwards; }
-.hsm-trial-demo .hsm-hero-title { font: 800 44px/1.06 var(--font-marketing); letter-spacing: -.02em; color: var(--ink-900); max-width: 15ch; margin: 0 auto; }
-.hsm-trial-demo .hsm-hero-sub { font: 500 18px/1.55 var(--font-marketing); color: var(--gray-600); margin: 20px auto 0; max-width: 54ch; }
+.hsm-trial-demo .hsm-hero-title { font: 800 44px/1.2 var(--font-marketing); letter-spacing: -.02em; color: var(--ink-900); margin: 0 auto; }
+.hsm-trial-demo .hsm-hero-sub { font: 500 18px/1.55 var(--font-marketing); color: var(--ink-body); margin: 20px auto 0; max-width: 54ch; }
 .hsm-trial-demo .hsm-hero-ctas { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 32px; }
-@media (max-width: 640px) { .hsm-trial-demo .hsm-hero { padding: 56px 0 40px; } .hsm-trial-demo .hsm-hero-title { font-size: 32px; max-width: 12ch; } }
+@media (max-width: 640px) { .hsm-trial-demo .hsm-hero { padding: 56px 0 40px; } .hsm-trial-demo .hsm-hero-title { font-size: 30px; } }
+@media (max-width: 400px) { .hsm-trial-demo .hsm-hero-title { font-size: 26px; } }
 
 .hsm-trial-demo .hsm-btn {
-    display: inline-flex; align-items: center; gap: 8px; font: 700 15px var(--font-marketing);
-    padding: 14px 24px; border-radius: 12px; text-decoration: none; cursor: pointer;
+    display: inline-flex; align-items: center; gap: 8px; font: 600 14px var(--font-marketing);
+    padding: 12px 28px; border-radius: 6px; text-decoration: none; cursor: pointer;
     border: 2px solid transparent; transition: background .15s var(--ease-standard), box-shadow .15s var(--ease-standard), border-color .15s var(--ease-standard);
 }
 .hsm-trial-demo .hsm-btn-primary { background: var(--green-500); color: #fff; }
@@ -71,7 +72,7 @@
 
 /* ============ DEMO FRAME CHROME ============ */
 .hsm-trial-demo .hsm-demo-wrap { padding: 0 0 100px; }
-.hsm-trial-demo .hsm-demo-intro { font: 500 15px/1.6 var(--font-marketing); color: var(--gray-600); max-width: 62ch; margin: 0 auto 20px; text-align: center; }
+.hsm-trial-demo .hsm-demo-intro { font: 500 15px/1.6 var(--font-marketing); color: var(--ink-body); max-width: 62ch; margin: 0 auto 20px; text-align: center; }
 .hsm-trial-demo .hsm-frame {
     position: relative; border-radius: 20px; overflow: hidden; background: var(--gray-200);
     box-shadow: 0 1px 3px rgba(13,31,45,.06), 0 24px 48px rgba(13,31,45,.16);
@@ -292,9 +293,9 @@
 
 /* ============ CLOSING CTA ============ */
 .hsm-trial-demo .hsm-closing { padding: 8px 0 100px; text-align: center; }
-.hsm-trial-demo .hsm-closing-title { font: 800 32px/1.15 var(--font-marketing); letter-spacing: -.02em; color: var(--ink-900); }
-.hsm-trial-demo .hsm-closing-sub { font: 500 16px/1.6 var(--font-marketing); color: var(--gray-600); max-width: 56ch; margin: 14px auto 0; }
-.hsm-trial-demo .hsm-closing .hsm-btn { margin-top: 28px; padding: 15px 30px; font-size: 15.5px; }
+.hsm-trial-demo .hsm-closing-title { font: 800 32px/1.2 var(--font-marketing); letter-spacing: -.02em; color: var(--ink-900); }
+.hsm-trial-demo .hsm-closing-sub { font: 500 16px/1.6 var(--font-marketing); color: var(--ink-body); max-width: 56ch; margin: 14px auto 0; }
+.hsm-trial-demo .hsm-closing .hsm-btn { margin-top: 28px; padding: 13px 32px; font-size: 15px; }
 .hsm-trial-demo .hsm-trust-line { font: 600 13px var(--font-marketing); color: var(--gray-500); margin-top: 16px; }
 
 @media (max-width:900px) {
@@ -310,7 +311,7 @@
 
   <!-- HERO -->
   <div class="hsm-hero hsm-container">
-    <h1 class="hsm-hero-title">Sign up, and you&rsquo;re already using the real platform.</h1>
+    <h1 class="hsm-hero-title">Sign up, and you&rsquo;re already using<br>the real platform.</h1>
     <p class="hsm-hero-sub">No sales call. No card details. No waiting for someone to set you up. Create an account below and you get full access to The HS Manager on web and mobile &mdash; the same platform every customer uses, free for 30 days.</p>
     <div class="hsm-hero-ctas">
       <a class="hsm-btn hsm-btn-primary" href="https://app.thehsmanager.co.uk/Signup">Start your free trial
